@@ -1,14 +1,33 @@
-# Scanner de Termos de Entrega
+# Scanner de Termos de Uso
 
 ## Execução
 
 ### Pré-requisitos
 
-- Ter o Python instalado.
+- Ter o [Python](https://www.python.org/downloads) e o [Tesseract](https://github.com/UB-Mannheim/tesseract/wiki) instalados.
+- Ter os [dados de treinamento do Tesseract](https://github.com/tesseract-ocr/tessdata/raw/main/por.traineddata)
+    instalados na pasta apontada por `TESSDATA_PREFIX`.
 
-### Etapas
+### Atendendo aos pré-requisitos
 
-1. Mova os termos de entrega para a pasta "pdfs".
+1. Instalar o Python e o Tesseract via Scoop:
+
+```sh
+scoop install main/python
+scoop install main/tesseract
+```
+
+2. Baixe os dados de treinamento por meio do link:
+\
+<https://github.com/tesseract-ocr/tessdata/raw/main/por.traineddata>
+
+3. Mova os dados de treinamento para a pasta:
+\
+`C:\Users\richards\scoop\apps\tesseract\current\tessdata`
+
+### Etapas para execução
+
+1. Mova os termos de uso para a pasta "pdfs".
 
 2. Abra o terminal na pasta do projeto.
 
